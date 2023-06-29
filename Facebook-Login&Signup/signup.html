@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formsection{
+  
+    width: 410px;
+    height: 500px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 5px;
+}
+.toptext{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.line{
+    height: 2px;
+    background-color: gainsboro;
+    margin-top: 3px;
+}
+.gendersection{
+    display: flex;
+    justify-content: center;
+}
+.mainform input{
+    background-color: #f7f6f6;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    padding-left: 5px;
+    margin-bottom: 16px;
+    
+}
+.mainform{
+    padding: 15px;
+}
+
+.gendersection{
+    width: 370px;
+ 
+}
+.box{
+    width:108px;
+    border: 1px solid black;
+    
+    margin-left: 0;
+    padding-top: 9px;
+    border :0.5px solid gray;
+    border-radius: 5px;
+}
+.box p{
+    padding-left: 5px;
+}
+
+select{
+    width: 108px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+small{
+    font-size:12px;
+}
+
+small span{
+    color:blue;
+}
+
+.signup{
+    margin: 15px 0;
+    width:240px;
+    height:40px;
+    background-color: #0ec90e;
+    border-radius: 5px;
+    border:none;
+    color:white;
+}
+.signup:hover{
+    background-color: #047204b7;
+
+}
+.moreinfo{
+    background-color: rgba(255, 255, 0, 0.521);
+    border:1px solid black;
+    width:200px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+span:hover .moreinfo{
+visibility: visible;
+transition-delay: 0.75s;
+}
+.toptext-firstrow{
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+</head>
+
+<body>
+    <div class="formsection">
+        <div class="toptext">
+            <div class="toptext-firstrow">
+<h1 style="font-family:Arial, Helvetica, sans-serif;">Sign Up</h1>
+<a href="fb login.html">
+<i class="fa-solid fa-xmark" style="margin-right: 25px;"></i>
+</a>
+</div>
+<span style="color:gray;">It's quick and easy.</span>
+
+</div>
+<div class="line"></div>
+
+
+<div class="mainform">
+<form>
+
+    <input type="name" placeholder="Firstname">
+    <input type="name" placeholder="Surname" style="margin-left: 12px;">
+    <br>
+    <input type="text" placeholder="Mobile Number or Email" style="width:370px;"><br>
+    <input type="password" placeholder="New Password" style="width:370px;"><br>
+
+    <span>Date of Birth 
+        <i class="fa-solid fa-circle-question"></i>
+    
+        <div class="moreinfo">
+            <p>click for more information</p>
+        </div>
+    </span>
+    
+    
+    <br>
+    <select style="margin-right:17px;">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <select style="margin-right:17px;">
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+    </select>
+
+    <select>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+    </select>
+
+    <br>
+    <br>
+
+    <span>Gender 
+        <i class="fa-solid fa-circle-question"></i>
+        <div class="moreinfo">
+            <p>click for more information</p>
+        </div>
+    </span>
+
+   
+
+    <div class="gendersection">
+<div class="box" style="margin-right:20px;">
+    <p >Male<span><input type="radio" name="gender" style="margin-left: 50px; padding-top:5px;"></p>
+</div>
+ 
+<div class="box" style="margin-right:20px;">
+    <p >Female<span><input type="radio" name="gender" style="margin-left: 36px; padding-top:5px;"></span></p>
+</div>
+
+<div class="box">
+    <p>Custom<span><input type="radio" name="gender" style="margin-left: 32px; padding-top:5px;"></p>
+</div>
+</div>
+<br>
+
+<small>By clicking Sign Up, you agree to our <span>Terms, Data Policy </span>and <span>Cookie Policy.</span> You may receive SMS notifications from us and can opt out at any time.</small>
+
+<center>
+    <button type="submit" class="signup">Sign Up</button>
+</center>
+   
+</form>
+
+</div>
+    </div>
+</body>
+</html>
