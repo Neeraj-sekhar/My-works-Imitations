@@ -219,74 +219,7 @@ footer p{
 
 /**Media Query*/
 
-
-@media all and (max-width:700px){
-    .banner{
-        background-position: right;
-    }
-
-    .box{
-        padding-left:0;
-
-    }
-    .box p{
-        padding-right:16px;
-    }
-}
-
-
-@media all and (max-width:450px){
-   .banner h1{
-    font-size:24px;
-   }
-   .banner p{
-    font-size:20px;
-   }
-}
-
-
-@media all and (max-width:390px){
-   .banner{
-    background-position: 80%;
-   }
-   
-}
-
-@media all and (max-width:768px){
-    .offer-img{
-        display:block;
-        margin:auto;
-    }
- }
-
- @media all and (max-width:576px){
-    .mainrow-left{
-        text-align: center;
-    }
-    .logo-wrap{
-        margin:auto;
-    }
- }
-
- @media all and (max-width:768px){
-    #request{
-        height:auto;
-    }
-    .form-box{
-        padding-top:30px;
-        margin:auto;
-        text-align:center;
-    }
- }
-
- @media all and (max-width:560px){
-    
-    .form-box{
-        width:100%;
-    }
- }
-
- @media all and (max-width:992px){
+@media all and (max-width:992px){
     
     .navbar-toggler{
         background: white;
@@ -300,6 +233,65 @@ footer p{
     }
  }
 
+ @media all and (max-width:768px){
+    #request{
+        height:auto;
+    }
+    .form-box{
+        padding-top:30px;
+        margin:auto;
+        text-align:center;
+    }
+    .offer-img{
+        display:block;
+        margin:auto;
+    }
+ 
+ }
 
+@media all and (max-width:700px){
+    .banner{
+        background-position: right;
+        padding-left: 40px;
+    }
 
+    .box{
+        padding-left:0;
 
+    }
+    .box p{
+        padding-right:16px;
+    }
+}
+
+@media all and (max-width:576px){
+    .mainrow-left{
+        text-align: center;
+    }
+    .logo-wrap{
+        margin:auto;
+    }
+ }
+ 
+ @media all and (max-width:560px){
+    
+    .form-box{
+        width:100%;
+    }
+ }
+
+@media all and (max-width:450px){
+   .banner h1{
+    font-size:24px;
+   }
+   .banner p{
+    font-size:20px;
+   }
+}
+
+@media all and (max-width:390px){
+   .banner{
+    background-position: 80%;
+   }
+   
+}
